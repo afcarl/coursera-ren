@@ -1,0 +1,10 @@
+U. washington Coursera courses use exceedingly long file names,
+so we cannot download them in Windows. coursera-dl shortens the names
+but not in an intelligent way (it just truncates, leaving bad names)
+
+The following two functions are to be used in linux. They mostly rename
+the directories and files to reasonable names. I still had to hand edit
+some really long names! So, the idea is, run coursera-dl in linux to get
+the course without truncating the name, load this module in ipython, run
+rename_dir in the root dir of the course, and then run re2 to rename the
+individual files. 
